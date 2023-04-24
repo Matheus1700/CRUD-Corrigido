@@ -1,0 +1,17 @@
+<h1>Cadastrar Produto</h1>
+
+<form action="/produtos/cadastrar" method="post">
+<input type="hidden" name="id" id="id" value="{{produto.id}}">
+<div>
+<label for="nome">nome</label>
+<input type="text" name="nome" id="nome" value="{{produto.nome}}"/> 
+</div>
+<div style="margin-top:10px"><label for="descricao">Descrição</label>
+<textarea name="descricao" >{{produto.descricao}}</textarea>
+</div>
+<div style="margin-top:10px"><label for="id_categoria">Id da Categoria</label>
+<input name="id_categoria" type="number" value="{{produto.id_categoria}}"></input>
+</div>
+
+<button type="submit">Salvar</button>
+</form>

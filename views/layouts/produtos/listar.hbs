@@ -1,0 +1,21 @@
+<h1>Lista de Produtos</h1>
+<table border="1">
+    <thead>
+        <tr>
+            <td>Nome</td>
+            <td>Descrição</td>
+            <td>Categoria</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each produtos}}
+        <tr>
+            <td>{{nome}}</td>
+            <td>{{descricao}}</td>
+            <td>{{categoria}}</td>
+            <td><a href="/produtos/editar?id={{id}}">Editar</a></td>
+            <td><a href="/produtos/remover?id={{id}}">Remover</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

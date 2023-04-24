@@ -1,0 +1,21 @@
+<h1>Lista de Categorias</h1>
+<table border="1">
+    <thead>
+        <tr>
+            <td>Nome</td>
+            <td>Descrição</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each categorias}}
+        <tr>
+            <td>{{nome}}</td>
+            <td>
+                {{descricao}}  
+            </td>
+            <td><a href="/categorias/editar?id={{id}}">Editar</a></td>
+            <td><a href="/categorias/remover?id={{id}}">Remover</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

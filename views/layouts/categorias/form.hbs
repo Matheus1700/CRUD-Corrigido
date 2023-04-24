@@ -1,0 +1,13 @@
+<h1>Cadastrar Categoria</h1>
+
+<form action="/categorias/cadastrar" method="post">
+<input type="hidden" name="id" id="id" value="{{categoria.id}}">
+<div>
+<label for="nome">nome</label>
+<input type="text" name="nome" id="nome" value="{{categoria.nome}}"/> 
+</div>
+<div style="margin-top:10px"><label for="descricao">Descrição</label>
+<textarea name="descricao" >{{categoria.descricao}}</textarea>
+</div>
+<button type="submit">Salvar</button>
+</form>
